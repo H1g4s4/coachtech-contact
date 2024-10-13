@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    /* 高さを100%に設定 */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に要素を並べる */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* 背景テキストを相対的に配置 */
+    overflow: hidden;
+}
+
+.thank-you-message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    /* 相対的に配置 */
+    z-index: 1;
+    /* 背景テキストの前に表示 */
+}
+
+h2 {
+    color: #827569;
+}
+
+.thanks-button {
+    background: #827569;
+    color: #fff;
+    text-decoration: none;
+    /* リンクの下線を消す */
+    padding: 10px 20px;
+    /* パディングを追加 */
+    font-size: 18px;
+    /* フォントサイズを設定 */
+    cursor: pointer;
+    /* カーソルをポインタに */
+    border-radius: 5px;
+    /* ボタンの角を丸くする */
+}
+
+.background-text {
+    font-size: 180px;
+    font-weight: bold;
+    color: rgba(221, 221, 221, 0.3);
+    /* 色を少し透明に */
+    position: absolute;
+    /* 絶対位置で配置 */
+    top: 50%;
+    /* 中央に配置 */
+    left: 50%;
+    /* 中央に配置 */
+    transform: translate(-50%, -50%);
+    /* 中心に合わせる */
+    z-index: 0;
+    /* 背景テキストを最背面に */
+}
